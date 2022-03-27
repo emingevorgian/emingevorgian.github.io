@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Online</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="icon" href="images/flag.png">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="game-zone">
+            <div class="game-area">
+
+                <!--Menu-->
+                <div class="menu">
+                    <h4 class="menu-text">Menu</h4>
+                </div>
+
+                <!--Menu window-->
+                <div class="menu-window">
+                    <table class="table table-options">
+
+                        <!--game options title-->
+                        <thead>
+                            <th scope="col">Game type</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">Width</th>
+                            <th scope="col">Mines</th>
+                        </thead>
+
+                        <!--game options-->
+                        <tbody>
+
+                            <!--beginner mode-->
+                            <tr>
+                                <th scope="row">
+                                    <label>
+                                        <input class="game-type" type="radio" name="select" value="1" attr-height="9"
+                                            attr-width="9" attr-mines="10" id="type-1" checked> Beginner
+                                    </label>
+                                </th>
+                                <td name="height">9</td>
+                                <td name="width">9</td>
+                                <td name="mines">10</td>
+                            </tr>
+
+                            <!--intermediate mode-->
+                            <tr>
+                                <th scope="row">
+                                    <label>
+                                        <input class="game-type" type="radio" name="select" value="2" attr-height="16"
+                                            attr-width="16" attr-mines="40" id="type-2"> Intermediate
+                                    </label>
+                                </th>
+                                <td name="height">16</td>
+                                <td name="width">16</td>
+                                <td name="mines">40</td>
+                            </tr>
+
+                            <!--expert mode-->
+                            <tr>
+                                <th scope="row">
+                                    <label>
+                                        <input class="game-type" type="radio" name="select" value="3" attr-height="16"
+                                            attr-width="30" attr-mines="99" id="type-3"> Expert
+                                    </label>
+                                </th>
+                                <td name="height">16</td>
+                                <td name="width">30</td>
+                                <td name="mines">99</td>
+                            </tr>
+
+                            <!--custom mode-->
+                            <tr>
+                                <th scope="row">
+                                    <label>
+                                        <input class="game-type" type="radio" name="select" value="4" attr-height="20"
+                                            attr-width="30" attr-mines="145" id="type-4"> Custom
+                                    </label>
+                                </th>
+                                <td><input type="text" name="height" placeholder="20" id="height-4"
+                                        class="custom-option">
+                                </td>
+                                <td><input type="text" name="width" placeholder="30" id="width-4" class="custom-option">
+                                </td>
+                                <td><input type="text" name="mines" placeholder="145" id="mines-4"
+                                        class="custom-option">
+                                </td>
+                            </tr>
+
+                            <!--night mode-->
+                            <tr>
+                                <th scope="row">
+                                    <label>
+                                        <input type="checkbox" name="night" id="night-mode" value="night"> Night Mode
+                                    </label>
+                                </th>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <!--menu button-->
+                    <div class="button-area">
+                        <button type="button" class="btn btn-dark close-button">Close</button>
+                        <button type="button" class="btn btn-success start-button">Start</button>
+                    </div>
+
+                </div>
+
+                <!--Game-->
+                <div class="game-part">
+                    <table class="game">
+                        <thead>
+                            <tr>
+                                <div class="header" colspan="3">
+                                    <div class="bombs">
+                                        <h5 class="the-bombs">10</h5>
+                                    </div>
+                                    <div class="smiley">
+                                        <img src="images/smiley.png" alt="" class="the-smiley">
+                                    </div>
+                                    <div class="time">
+                                        <h5 class="the-time">0</h5>
+                                    </div>
+                                </div>
+                            </tr>
+                        </thead>
+
+                        <tbody class="spots">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="public/js/script.js"></script>
+
+</body>
+
+</html>

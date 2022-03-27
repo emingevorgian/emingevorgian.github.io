@@ -1,0 +1,234 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.game-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.game-area {
+  width: max-content;
+  height: 500px;
+}
+
+/* menu */
+
+.menu {
+  width: max-content;
+  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu:hover .menu-text {
+  cursor: pointer;
+  transform: translateY(1px);
+}
+
+.menu-text {
+  font-family: sans-serif;
+  margin-bottom: 0 !important;
+}
+
+/* menu window */
+.menu-window {
+  border-radius: 10px;
+  width: 390px;
+  background-color: rgba(211, 211, 211, 1);
+  font-family: sans-serif;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show {
+  display: block;
+}
+
+.dark-back {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.table-options {
+  margin-bottom: 0 !important;
+}
+
+.table th,
+.table td {
+  padding-bottom: 0 !important;
+}
+
+.custom-option {
+  width: 38px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* button */
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-area button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.close-button {
+  width: 95px;
+}
+
+.start-button {
+  width: 100px;
+}
+
+/* game */
+
+.game-part {
+  width: max-content;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 14px lightgray ridge;
+  background-color: rgba(195, 195, 195, 1);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 18px lightgray ridge;
+  width: max-content;
+  height: max-content;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/* bomb */
+
+.bombs {
+  width: 75px;
+  height: 47px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.bombs h5 {
+  color: red;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* smile */
+
+.smiley {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-image: url(../../images/facingDown.png);
+  background-size: contain;
+}
+
+.smiley:active {
+  background-image: url(../../images/0.png);
+  border: 4px solid grey;
+}
+
+.smiley:active .the-smiley {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.smiley img {
+  width: 35px;
+  height: 35px;
+}
+
+/* time */
+
+.time {
+  width: 75px;
+  height: 47px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.time h5 {
+  color: red;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* spots */
+
+.spot {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/facingDown.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0px 5px rgb(0 0 0 / 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spot:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.spot:active {
+  background-image: url(../../images/0.png);
+}
+
+.spot img {
+  width: 23px;
+  height: 23px;
+}
+
+.end {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  margin-top: 100px;
+}
